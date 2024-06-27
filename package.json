@@ -2,13 +2,12 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "build": "./build.sh",
+    "scripts": {
+    "build": "chmod +x ./node_modules/.bin/hexo && npx hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
     "test": ""
-
   },
   "hexo": {
     "version": "7.2.0"
